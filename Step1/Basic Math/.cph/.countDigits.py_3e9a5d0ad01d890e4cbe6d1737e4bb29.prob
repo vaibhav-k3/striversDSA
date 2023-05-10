@@ -1,0 +1,1 @@
+{"name":"Local: countDigits","url":"d:\\PythonProgs\\DSA\\striversDSA\\Step1\\Basic Math\\countDigits.py","tests":[{"id":1683702636978,"input":"1","output":"1"},{"id":1683703581569,"input":"12345","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PythonProgs\\DSA\\striversDSA\\Step1\\Basic Math\\countDigits.py","group":"local","local":true}
