@@ -6,8 +6,6 @@ def mergeSubintervals(intervals):
     for i in range(len(intervals)):
         if len(ans) <= 0 or ans[-1][1] < intervals[i][0]:
             ans.append(intervals[i])
-        # elif :
-        #     ans.append(intervals[i])
         elif ans[-1][1] > intervals[i][0] :
             end = max(ans[-1][1],intervals[i][1])
             ans[-1][1] = end
