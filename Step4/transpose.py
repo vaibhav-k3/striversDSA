@@ -2,7 +2,7 @@ def solution(matrix):
     # Type your solution here
     n = len(matrix)
     m = len(matrix[0])
-    temp = [0
+    temp = [0*m]*n
     for i in range(0,n):
         for j in range(0,m):
             temp[j][i]=matrix[i][j]

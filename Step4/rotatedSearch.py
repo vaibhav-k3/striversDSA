@@ -26,23 +26,23 @@ def invr():
 
 def rotatedSearch(arr,key):
     low = 0
-    high = len(arr) -1
+    high = len(arr) - 1
     ans = -1
-    while low <=high:
-        mid = (low+high)//2
+    while low <= high:
+        mid = (low + high)//2
         if arr[mid] == key:
             ans = mid
-            break
-        elif arr[mid] < arr[high]:
-            if arr[mid] > key and key > arr[low]:
-                low = mid+1
+            return ans
+        elif arr[low] <= arr[mid]:
+            if arr[low] <= key and key <= arr[mid]:
+                high = mid - 1
             else:
-                high = mid -1
-        else:
-            if arr[mid] < key and key < arr[high]:
-                low = mid+1
+                low = mid + 1
+        elif arr[mid] <= arr[high]:
+            if arr[mid] <=key and key <=arr[high]:
+                low = mid + 1
             else:
-                high = mid -1
+                high = mid - 1
     
     return ans
             
