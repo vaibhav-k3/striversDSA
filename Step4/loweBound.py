@@ -10,14 +10,12 @@ def invr():
 
 def lowerBound(arr,low, high , key):
     prev_key = -1
-    while low < high:
+    while low <= high:
         mid = (low+high)//2
-        if arr[mid] == key:
-            return mid
-        elif arr[mid] > key:
+        if arr[mid] >= key:
             high = mid - 1
-        elif arr[mid] < key:
             prev_key = mid
+        else:
             low = mid+1
     return prev_key
 
