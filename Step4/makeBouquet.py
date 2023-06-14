@@ -35,13 +35,11 @@ def makeBouquet(arr,m,k):
                 cnt2+=1
                 cnt1=0
         if cnt2==m:
-            return mid
-        if total_diff < 0:
-            high = mid - 1
+            high = mid -1 
         else:
             low = mid + 1
     
-    return high
+    return low - 1
 
 
 
