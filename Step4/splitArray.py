@@ -23,7 +23,7 @@ def subArrayExists(arr,mid,k):
             return False
 
         while j < len(arr):
-            if sum >=mid:
+            if sum ==mid:
                 return True
             sum+=arr[j]
             j+=1
@@ -44,7 +44,7 @@ def subArrayWithLargestSum(arr,k):
     while low <= high:
         mid = (low+high)//2
         if subArrayExists(arr,mid,k):
-            ans = mid
+            # ans = max(ans,mid)
             low = mid + 1
         else:
             high = mid -1
