@@ -42,15 +42,11 @@ def subArrayWithLargestSum(arr,k):
     high = 99999999
     ans = -1
     while low <= high:
-        # 
         mid = (low+high)//2
-        
         if subArrayExists(arr,mid,k):
             ans = mid
             low = mid + 1
         else:
-            # ans = mid
-            # print(low,high,mid)
             high = mid -1
         ans = mid
     return ans
